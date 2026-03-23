@@ -1,0 +1,6 @@
+# gemini.h14h.com
+
+Welcome to my capsule.
+
+=> gemlog/index.gmi Gemlog
+=> about.gmi About

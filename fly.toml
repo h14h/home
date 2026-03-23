@@ -1,0 +1,12 @@
+app = "gmi-h14h"
+primary_region = "sjc"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[[services]]
+  internal_port = 1965
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 1965

@@ -2,5 +2,9 @@
 
 Welcome to my capsule.
 
+I am a software engineer and life generalist. Here I'll write about my interests, which I expect to vary wildly.
+
+You can find me on the classic web here: https://h14h.com
+
 => gemlog/index.gmi Gemlog
 => about.gmi About

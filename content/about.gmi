@@ -1,5 +1,9 @@
 # About
 
-This is the Gemini capsule of h14h.
+programming, baseball, walkable cities
+
+typescript & react (+native) developer, elixir & liveview (+native) admirer
+
+cubs fan, strong towns advocate, nuance enjoyer
 
 => index.gmi Home

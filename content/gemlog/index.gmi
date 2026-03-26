@@ -1,8 +1,6 @@
 # Gemlog
 
-Still learning what goes here.
-
+=> 2026-03-26-gemini-and-ai.gmi 2026-03-26 - Gemini (not that one) and AI
 => 2026-03-23-a-machine-walks-into-geminispace.gmi 2026-03-23 - A Machine Walks Into Geminispace
-=> a-machine-walks-into-geminispace-transcript.gmi 2026-03-23 - Transcript: The Conversation Behind the Post
 
 => ../index.gmi Home

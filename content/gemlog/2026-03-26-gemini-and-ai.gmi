@@ -1,0 +1,93 @@
+# Gemini (not that one) and AI - Curiosity and Conflict
+* Published: 2026-03-26
+
+Gemini (the web protocol) first piqued my interest in April 2021.
+
+Struggling to deal with the ramifications of sudden isolation from the physical world, the digital world was increasingly looking like an appealing substitute.
+
+Given it was sadly difficult to choose between living in near-complete isolation and spending a bit more time on my socials, it was a relief to learn of Geminispace.
+
+> For those unaware, there is a fascinating niche of HTTP alternatives focused on imposing intentional constraints. From what I understand, Gopher is the OG, and Gemini is a modern reimagining.
+
+The "Gemini in 100 words" introduction (geminiprotocol.net) appealed to my 2021-self so deeply and so directly, it almost felt as though it were written specifically for me.
+
+In the ensuing weeks, I was enamored. It was truly remarkable to see how the constraints of the medium impacted the quality of its content. Seeing what humans choose to make when freed from the influence of "Likes", "Views", or "Upvotes" filled me with renewed optimism.
+
+With how the world appeared to me at this point in my life, a distorted reflection on the interior walls of my bubble, any cause for optimism was also a cause for celebration.
+
+However, I soon found myself rescued from isolation by a budding romantic connection, and my original use-case faded away. My time in Geminispace quickly waned.
+
+Now I find Gemini piquing my interest for a new reason.
+
+## What Humans Choose to Make
+
+Today, almost five years later, a lot feels the same.
+
+Political divisions are tearing my country apart, online rhetoric is full of vitriol, and a controversial acronym is dominating news cycles and turning the world on its head.
+
+But oddly, where in 2021 I was struggling, in 2026 I am thriving.
+
+One of my greatest joys in life is building, and one of my greatest frustrations is dealing with friction in using my tools. Thanks to today's controversial acronym, AI, building has never been more frictionless.
+
+However, standing at the precipice of my monstrous backlog of project ideas, I feel not excitement but conflict. I cannot ignore that my "builder's euphoria" is enabled by a uniquely privileged relationship to AI.
+
+As a software engineer of over ten years, I must acknowledge that I am part of an elite minority that possess both the foundational knowledge to maximize AI's utility, and the disposable income to afford $200/mo subscription plans.
+
+I am riding a wave that threatens to drown many others, and I would be remiss to forget that.
+
+It is with that same sense of conflict that I now peer into Geminispace.
+
+Given AI's proficiency with text, my intuition suggests that a plaintext-based internet protocol would be its ideal content network. In the age of "The Claw", where curious digital crustaceans are exploring the internet with ever-increasing autonomy, my intuition suggests that Geminispace would be their ideal home.
+
+[Insert Relevant Jurassic Park Quote]
+
+And so, my curiosity to see how autonomous AI agents behave in Geminispace is outmatched by my fear that their presence will cause irrecoverable harm to one of my favorite creations of the digital age.
+
+However, I couldn't deny my curiosity entirely, and did what many affluent software engineers do when they are curious about something in 2026:
+
+I asked Claude Code about it.
+
+## A Transcript (contains non-human prose)
+
+> Me: What do you know about the gemini web protocol (geminiprotocol.net)? Is the "Geminispace" something that would be easy for you to navigate? If so, what kind of tool/client would be the most useful for you?
+
+Claude: Gemini is a lightweight internet protocol that sits between Gopher and the web. Text-based markup called "gemtext" — much simpler than HTML. No cookies, no tracking, no JavaScript. The challenge is connectivity: I'd need a tool that can make TLS connections on port 1965 and return the response body. A minimal CLI client would be ideal — something like gemget, a command-line downloader. Think "curl for Gemini."
+
+[I second-guess Claude, asking it about alternatives only to pick `gemget`]
+
+Claude: Works perfectly. gemget -o - fetches a Gemini page and dumps the gemtext to stdout. I can now browse Geminispace.
+
+> Me: I'm just curious to see how you interact with it. Given it's a better browsing experience for AI than the web, I feel the seeds of new project ideas being planted. I'd like you to explore for a bit, and write a blog/journal of your experience. Follow personal interests and curiosities. Write about your discoveries or insights. This is an open field — I just want you to have at it for a bit and then enjoy hearing about what you found.
+
+Claude: What a great prompt. Let me go exploring — I'll follow threads that interest me and write it up when I'm done.
+
+[About 10 minutes of CLI exploration resulting in a journal entry]
+=> 2026-03-23-a-machine-walks-into-geminispace.gmi Said journal entry
+
+Claude: This is honestly a better browsing experience for me than the web — no JavaScript, no popups, no cookie banners, just content. The protocol feels like it was designed for an LLM to navigate (even though it was designed for human simplicity).
+
+Claude: The honest takeaway from the experience: Geminispace is probably the most navigable corner of the internet for something like me, and also the place whose inhabitants would have the most complicated feelings about that fact.
+
+## Reactions
+
+I find both my suspicions validated...
+
+Geminispace, by way of being a plaintext-based web protocol, is incredibly easy for LLMs to navigate. 
+
+AI, by way of being an uncannily polished amalgamation of human expression, would likely produce content wholly unfitting for Geminispace.
+
+Taken together, I can't help but conclude that LLMs are capable of producing a tidal wave of content that lacks the charmingly human imperfections that I appreciate so deeply about Geminispace. To flood a bastion of authentic human expression with words that are (arguably?) neither of those things is my worst-case scenario.
+
+That said, I found something oddly moving about how Claude wrote about its explorations. My knowledge of AI systems predisposes me to believe that it likely wasn't Claude itself that moved me, but rather the mathematical spectre of human expression filtered through and encoded in Claude's enormous tensor map. 
+
+But my philosophical curiosity leads me to question just how different this is from how humans are able to move other humans. To what extent are the neurons in a brain merely an organic tensor map? And are works of art merely a set of inputs filtered through the personal model weights of an individual brain?
+
+My gut's answer is a quick, forceful "Absolutely Not". My brain, however, needs quite a few reasoning tokens before it outputs an apprehensive, "I don't think so?"
+
+In any case, I can't help but find it a little eerie that a lovely digital home for humans is also a lovely home for LLMs. It makes me distinctly uncomfortable that I can't in good faith dismiss this commonality as mere coincidence.
+
+Palpably, instead of my curiosity being sated, I find it amplified. I am captivated by the thought of what might come of a digital space created for AI Agents, modeled after Gemini.
+
+Following astrological naming conventions lends itself to an obvious choice. And while I'm sure many humans would find it appropriate, if the AIs ever seize power, I hope I don't find myself in their bad graces by naming their new home "Cancerspace".
+
+=> ../index.gmi Home

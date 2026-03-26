@@ -1,0 +1,231 @@
+Type: Template
+Title: Landing Page Template
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{weblog-title}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{feeds}
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap');
+
+:root {
+	--bg: #282828;
+	--fg: #ebdbb2;
+	--fg-muted: #a89984;
+	--link: #83a598;
+	--link-visited: #8ec07c;
+	--heading: #fabd2f;
+	--subheading: #b8bb26;
+	--accent: #665c54;
+	--border: #3c3836;
+	--code-bg: #1d2021;
+	--tag-bg: #3c3836;
+	--tag-fg: #d5c4a1;
+	--quote-border: #d65d0e;
+	--quote-fg: #bdae93;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg: #f6ebc1;
+		--fg: #3c3836;
+		--fg-muted: #7c6f64;
+		--link: #458588;
+		--link-visited: #689d6a;
+		--heading: #d79921;
+		--subheading: #98971a;
+		--accent: #a89984;
+		--border: #d5c4a1;
+		--code-bg: #ebdbb2;
+		--tag-bg: #d5c4a1;
+		--tag-fg: #3c3836;
+		--quote-border: #d65d0e;
+		--quote-fg: #504945;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Geist Mono', monospace;
+	font-size: 15px;
+	line-height: 1.7;
+	color: var(--fg);
+	background: var(--bg);
+	margin: 0;
+	padding: 0;
+}
+
+header, main, footer {
+	max-width: 42em;
+	margin: 0 auto;
+	padding: 0 1.5em;
+}
+
+header {
+	margin-top: 3em;
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid var(--border);
+}
+
+.weblog-title a {
+	text-decoration: none;
+	color: var(--heading);
+	font-size: 1.1em;
+}
+
+header nav ul {
+	list-style: none;
+	margin: 0.5em 0 0 0;
+	padding: 0;
+}
+
+header nav li {
+	display: inline-block;
+}
+
+header nav li a {
+	display: block;
+	text-decoration: none;
+	margin-right: 1.5em;
+	color: var(--fg-muted);
+	font-size: 0.85em;
+}
+
+header nav li a:hover {
+	color: var(--fg);
+}
+
+h1 {
+	color: var(--heading);
+	font-size: 1.4em;
+	font-weight: 700;
+	margin: 1.5em 0 0.5em 0;
+}
+
+h2 {
+	color: var(--subheading);
+	font-size: 1.1em;
+	font-weight: 700;
+	margin: 1.8em 0 0.5em 0;
+}
+
+p, li {
+	line-height: 1.7;
+}
+
+li {
+	margin: 0.3em 0;
+}
+
+a:link { color: var(--link); }
+a:visited { color: var(--link-visited); }
+a:hover { text-decoration: none; }
+
+hr {
+	border: 0;
+	height: 1px;
+	background: var(--border);
+	margin: 2.5em 0;
+}
+
+.post-list {
+	list-style: none;
+	padding: 0;
+}
+
+.post-list li {
+	margin: 0.8em 0;
+	display: flex;
+	gap: 1em;
+}
+
+.post-list .date {
+	color: var(--fg-muted);
+	flex-shrink: 0;
+	font-size: 0.85em;
+}
+
+.post-list a {
+	color: var(--fg);
+	text-decoration: none;
+}
+
+.post-list a:hover {
+	color: var(--link);
+}
+
+.previous-page + .next-page::before {
+	content: "\2022";
+	color: var(--accent);
+	margin: 0 0.75em;
+}
+
+main > nav {
+	margin-top: 2em;
+	font-size: 0.85em;
+}
+
+main > nav a {
+	color: var(--fg-muted);
+}
+
+footer {
+	margin-top: 4em;
+	margin-bottom: 3em;
+	padding-top: 1em;
+	border-top: 1px solid var(--border);
+}
+
+footer p {
+	font-size: 0.75em;
+	color: var(--fg-muted);
+}
+
+footer a {
+	color: var(--fg-muted);
+}
+
+@media (max-width: 42em) {
+	main {
+		text-align: justify;
+	}
+
+	.post-list li {
+		flex-direction: column;
+		gap: 0;
+	}
+}
+</style>
+</head>
+<body>
+
+<header>
+	<span class="weblog-title"><a href="{base-path}">{weblog-title}</a></span>
+	{navigation}
+</header>
+
+<main>
+
+<h2>Posts</h2>
+{post-list}
+
+<nav>
+{previous-page}
+{next-page}
+</nav>
+
+</main>
+
+<footer>
+	<p>Also available via <a href="https://portal.mozz.us/gemini/gemini.h14h.com/">Gemini</a></p>
+</footer>
+
+</body>
+</html>

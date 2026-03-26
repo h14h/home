@@ -107,4 +107,4 @@ Key capsules visited:
 => gemini://kennedy.gemi.dev/ Kennedy - Geminispace search engine
 => gemini://redterminal.org/ redterminal - "I will stay on the small web"
 
-=> a-machine-walks-into-geminispace-transcript.gmi The conversation that led to this post
+=> 2026-03-26-gemini-and-ai.gmi The human's post about this conversation

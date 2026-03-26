@@ -113,6 +113,7 @@ a, a:link {
 
 .sep {
   color: var(--accent);
+  margin-bottom: 2px;
 }
 
 .line {

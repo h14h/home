@@ -30,6 +30,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Push profile page
+        run: |
+          python3 -c "
+          import json
+          html = open('weblog/profile.html').read()
+          css = open('weblog/profile.css').read()
+          content = html.replace('{{CSS}}', css)
+          print(json.dumps({'content': content, 'publish': True}))
+          " | curl -s -X POST \
+            -H "Authorization: Bearer $OMGLOL_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d @- \
+            "https://api.omg.lol/address/$OMGLOL_ADDRESS/web"
+
       - name: Push weblog config
         run: |
           curl -s -X POST \

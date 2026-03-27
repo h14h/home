@@ -48,7 +48,7 @@ for file in "$CONTENT_DIR"/[0-9]*.gmi; do
 
     md_content=$(gmi_to_md "$file")
 
-    if curl --fail-with-body -sS -X POST \
+    if curl --fail-with-body -sS -X PUT \
         -H "Authorization: Bearer ${OMGLOL_API_KEY}" \
         -H "Content-Type: text/plain" \
         -d "---

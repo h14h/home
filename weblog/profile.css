@@ -203,7 +203,6 @@ a, a:link {
   }
 
   .colors {
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
   }
 }
